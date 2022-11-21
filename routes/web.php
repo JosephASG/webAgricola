@@ -41,7 +41,3 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->group(function
     });
 
 });
-
-Route::get('/custom/register', function(){
-    return view('custom.register');
-});

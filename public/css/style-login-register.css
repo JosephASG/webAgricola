@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.btn-IS{
+    width: 100%;    
+}
+.btn-IS:hover{
+    background-color: #1b733b;
+}
+img{
+    display: block;
+    width: 45%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+body{    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.contenedor__todo{
+    width: 150%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+.caja__trasera{
+    border-radius: 2%;
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 255, 60, 0.42);
+
+}
+
+.caja__trasera div{
+    margin: 100px 40px;
+    color: white;
+    transition: all 500ms;
+}
+
+
+.caja__trasera div p,
+.caja__trasera button{
+    margin-top: 30px;
+}
+
+.caja__trasera div h3{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+.caja__trasera div p{
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.caja__trasera button{
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    transition: all 300ms;
+}
+
+.caja__trasera button:hover{
+    background: #fff;
+    color: #46fd89;
+}
+
+/*Formularios*/
+
+.contenedor__login-register{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    top: -185px;
+    left: 10px;
+
+    /*La transicion va despues del codigo JS*/
+    transition: left 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+}
+
+.contenedor__login-register form{
+    width: 100%;
+    padding: 80px 20px;
+    background: white;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.contenedor__login-register form h2{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #0a715b;
+}
+
+.contenedor__login-register form input{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background: #F2F2F2;
+    font-size: 16px;
+    outline: none;
+}
+
+.contenedor__login-register form button{
+    padding: 10px 40px;
+    margin-top: 40px;
+    border: none;
+    font-size: 14px;
+    background: #148f07;
+    font-weight: 600;
+    cursor: pointer;
+    color: white;
+    outline: none;
+}
+
+
+
+
+.formulario__login{
+    opacity: 1;
+    display: block;
+}
+.formulario__register{
+    display: none;
+}
+
+
+
+@media screen and (max-width: 850px){
+
+    main{
+        margin-top: 50px;
+    }
+
+    .caja__trasera{
+        max-width: 350px;
+        height: 300px;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .caja__trasera div{
+        margin: 0px;
+        position: absolute;
+    }
+
+
+    /*Formularios*/
+
+    .contenedor__login-register{
+        top: -10px;
+        left: -5px;
+        margin: auto;
+    }
+
+    .contenedor__login-register form{
+        position: relative;
+    }
+}
+
+.icono-placerholder{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+}
+.icono-placerholder::placeholder{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 500; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/*:::Boton-Modal Cliente:::*/
+.boton-modal-cliente{
+    padding: 40px;
+    background-color: #fff;
+}
+.boton-modal-cliente label{
+    padding: 8px 8px;
+    width: 10%;    
+    font-weight: bold;
+    background-color: #54a359;
+    color: #fff;
+    border-radius: 70px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal-cliente label:hover{
+    background-color: #18834c;
+}
+/*:::Fin Boton-Modal Cliente:::*/
+
+/*:::Ventana Modal Cliente:::*/
+#btn-modal-cliente{
+    display: none;
+}
+.container-modal-cliente{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(124, 163, 148, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal-cliente:checked ~ .container-modal-cliente{
+    display: flex;
+}
+.content-modal-cliente{
+    width: 400%;
+    max-width: 500px;
+    padding: 2px;
+    background-color: rgb(248, 247, 247);
+    border-radius: 4px;
+}
+.content-modal-cliente h2{
+    margin-bottom: 15px;
+}
+.content-modal-cliente p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal-cliente .btn-cerrar-cliente{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal-cliente .btn-cerrar-cliente label{
+    padding: 7px 10px;
+    background-color: #54a372;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal-cliente .btn-cerrar-cliente label:hover{
+    background-color:#18834e;
+}
+.cerrar-modal-cliente{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+
+/*:::REGISTER Cliente:::*/
+.content-modal-cliente .btn-register-cliente{
+    width: 100%;
+    margin-top: 15px;
+    display: contents;
+    justify-content: flex-end;
+}
+.content-modal-cliente .btn-register-cliente label{
+    padding: 7px 10px;
+    background-color: #54a372;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal-cliente .btn-register-cliente label:hover{
+    background-color:#18834e;
+}
+@media screen and (max-width:800px) {
+    .content-modal-cliente{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal Cliente:::*/
+
+
+
+
+
+/*:::Boton-Modal Vendedor:::*/
+.boton-modal-vendedor{
+    padding: 40px;
+    background-color: #fff;
+}
+.boton-modal-vendedor label{
+    padding: 10px 15px;
+    background-color: #54a359;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.boton-modal-vendedor label:hover{
+    background-color: #18834c;
+}
+/*:::Fin Boton-Modal Vendedor:::*/
+
+/*:::Ventana Modal Vendedor:::*/
+#btn-modal-vendedor{
+    display: none;
+}
+.container-modal-vendedor{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(124, 163, 148, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+#btn-modal-vendedor:checked ~ .container-modal-vendedor{
+    display: flex;
+}
+.content-modal-vendedor{
+    width: 400%;
+    max-width: 510px;
+    padding: 2px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.content-modal-vendedor h2{
+    margin-bottom: 15px;
+}
+.content-modal-vendedor p{
+    padding: 15px 0px;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+.content-modal-vendedor .btn-cerrar-vendedor{
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-modal-vendedor .btn-cerrar-vendedor label{
+    padding: 7px 10px;
+    background-color: #54a372;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal-vendedor .btn-cerrar-vendedor label:hover{
+    background-color:#18834e;
+}
+.cerrar-modal-vendedor{
+    width:100%;
+    height: 100vh;
+    position: absolute;
+    top:0; left: 0;
+    z-index: -1;
+}
+
+/*:::REGISTER VENDEDOR:::*/
+.content-modal-vendedor .btn-register-vended{
+    width: 100%;
+    margin-top: 15px;
+    display: contents;
+    justify-content: flex-end;
+}
+.content-modal-vendedor .btn-register-vendedor label{
+    padding: 7px 10px;
+    background-color: #54a372;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.content-modal-vendedor .btn-register-vendedor label:hover{
+    background-color:#18834e;
+}
+@media screen and (max-width:800px) {
+    .content-modal-vendedor{
+        width: 90%;
+    }
+}
+/*:::Fin Ventana Modal Vendedor:::*/

@@ -12,6 +12,6 @@ $(document).ready(function () {
 
     $(".btn-abrir").click(showPopup);
 
-    setTimeout(showPopup, 1500);
+    setTimeout(showPopup, 500);
 
 });

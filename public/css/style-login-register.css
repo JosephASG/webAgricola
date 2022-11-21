@@ -37,62 +37,11 @@ main{
     width: 150%;
     max-width: 800px;
     margin: auto;
-    position: relative;
-}
-
-.caja__trasera{
-    border-radius: 2%;
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 255, 60, 0.42);
-
-}
-
-.caja__trasera div{
-    margin: 100px 40px;
-    color: white;
-    transition: all 500ms;
-}
-
-
-.caja__trasera div p,
-.caja__trasera button{
-    margin-top: 30px;
-}
-
-.caja__trasera div h3{
-    font-weight: 400;
-    font-size: 26px;
-}
-
-.caja__trasera div p{
-    font-size: 16px;
-    font-weight: 300;
-}
-
-.caja__trasera button{
-    padding: 10px 40px;
-    border: 2px solid #fff;
-    font-size: 14px;
-    background: transparent;
-    font-weight: 600;
-    cursor: pointer;
-    color: white;
-    outline: none;
-    transition: all 300ms;
-}
-
-.caja__trasera button:hover{
-    background: #fff;
-    color: #46fd89;
+    position:grid;
+    padding: 500px 200px;
 }
 
 /*Formularios*/
-
 .contenedor__login-register{
     display: flex;
     align-items: center;
@@ -115,7 +64,7 @@ main{
 }
 
 .contenedor__login-register form h2{
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
     color: #0a715b;

@@ -24,7 +24,7 @@ class AdminController extends Controller
                 'password' => 'required',
             ]);
             if (Auth::guard('admin')->attempt(['email'=>$data['email'],'password'=>$data['password'],'status'=>1])) {
-                return redirect('admin/dashboard');
+                return redirect('/');
             } else {
                 return redirect()->back()->with('error_message', 'Usuario o clave incorrectos');
             }

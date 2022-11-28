@@ -18,11 +18,11 @@ class AdminSeeder extends Seeder
         $adminRecords =[
             [
                 'id'=>1,
-                'name'=>'Super Admin',
+                'name'=>'Luis Simbana',
                 'type'=>'superadmin',
                 'vendor_id'=>0,
-                'mobile'=>'0987654321',
-                'email'=>'admin@admin.com',
+                'mobile'=>'+593998160293',
+                'email'=>'lesimbania@espe.edu.ec',
                 'password'=>'$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', //password
                 'image'=>'',
                 'status'=>1

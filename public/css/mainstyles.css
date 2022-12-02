@@ -970,9 +970,8 @@ a .producto:hover img {
 }
 
 .espe-apartado a img {
-    width: 60vw;
+    width: 100vw;
     height: auto;
-    border-radius: 60px;
 }
 
 .btn-espe {

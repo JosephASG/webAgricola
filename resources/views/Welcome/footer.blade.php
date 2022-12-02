@@ -1,47 +1,36 @@
 <div class="container-footer">
 
         <footer>
+            <div class="ctn-img-logo">
+                <img src="{{ asset('multimedia/logos/cropped-cropped-PROWESS-AGRONOMIA@4x-1-1.png') }}" alt="">
+            </div>
+            <div class="columF">
+                <div class="paginas">
+                    <a href="">
+                        <i>Inicio</i>
+                    </a>
+                    <a href="">
+                        <i>Equipo</i>
+                    </a>
+                    <a href="">
+                        <i>Nosotros</i>
+                    </a>
+                    <a href="">
+                        <i>Productos</i>
+                    </a>
+                    <a href="">
+                        <i>Terminos y condiciones</i>
+                    </a>
+                </div>
+            </div>
             <div class="redes-footer">
                 <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
                 <a href="#"><i class="fab fa-tiktok icon-redes-footer"></i></a>
                 <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
             </div>
-            <div class="columF">
-                <div class="paginas">
-                    <p>PAGINAS</p>
-                    <hr>
-                    <br>
-                    <i>Inicio</i><br><br>
-                    <i>Equipo</i><br><br>
-                    <i>Nosotros</i><br><br>
-                    <i>Productos</i><br><br>
-                    <i>Terminos y condiciones</i>
-                </div>
-
-                <div class="Nuestros-productos">
-                    <p>NUESTROS PRODUCTOS</p>
-                    <hr>
-                    <br>
-                    <i>Frutas</i><br><br>
-                    <i>Vegetales</i><br><br>
-                    <i>Lacteos</i><br><br>
-                    <i>Carnes</i>
-                </div>
-
-                <div class="contactos">
-                    <p>CONTACTOS</p>
-                    <hr>
-                    <br>
-                    <a href="#"><i class="fab fa-whatsapp icon-redes-footer"></i></a>
-                    <br>
-                    <a href="#"><i class="fab fa-google icon-redes-footer"></i></a>
-                    <br>
-                    <a href="#"><i class="fa-solid fa-phone"></i></a>
-                </div>
+            <div class="ctn-derechos">
+                <h4>© 2022 Prowess Agronomia - Todos los Derechos Reservados</h4>
             </div>
-
-            <h4>© 2022 Prowess Agronomia - Todos los Derechos Reservados</h4>
-
         </footer>
 
     </div>

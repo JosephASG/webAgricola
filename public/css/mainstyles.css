@@ -1,10 +1,11 @@
 body {
     margin: 0;
-    background-image: url(multimedia/wallpapers/fondo.png);
+    /* background-image: url(multimedia/wallpapers/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; */
+    background-color: #EEC384;
     overflow-x: hidden;
 }
 
@@ -929,15 +930,49 @@ a .producto:hover img {
 }
 
 /* -------------------------------------------------------------------------------- */
+.ctn-espe-1 {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-wrapper-espe {
+    padding: 30px 0;
+    margin: 30px 0;
+}
+
+.ctn-wrapper-espe span {
+    font-family: 'Krona One', sans-serif;
+    font-size: 31px;
+    color: #121212;
+
+}
+
+.ctn-title-espe {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .espe-apartado {
-    display: block;
-    margin: auto;
-    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .espe-apartado a img {
-    width: 100vw;
+    width: 60vw;
     height: auto;
+    border-radius: 60px;
 }
 
 .btn-espe {
@@ -967,39 +1002,70 @@ a .producto:hover img {
     background-color: #38e89c80;
 }
 
+.ctn-espe-2 {
+    margin: 100px 0;
+}
 
 .espe-apartado-THEWUR {
-    display: block;
     margin: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
 }
 
-.espe-apartado-THEWUR a img {
+.espe-apartado-THEWUR a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.espe-apartado-THEWUR a img.imgespe-rank {
     width: 300px;
     height: auto;
-
+    margin: 0 50px;
 }
 
-.espe-apartado-THEWUR .imgespe {
-    border-radius: 10%;
-
+.espe-apartado-THEWUR a img.imgespe-espe {
+    width: 300px;
+    height: auto;
+    margin: 0 50px;
 }
 
+.espe-apartado-THEWUR a img.imgespe-decea {
+    width: auto;
+    height: 200px;
+    margin: 0 50px;
+}
 
 
 /*Footer - pie de pagina*/
 
 .container-footer {
-    width: 100%;
-    padding: 1% 0;
-    background: rgba(68, 255, 0, 0.226);
-    margin-top: 100px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1029%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c41 C 57.6%2c72 172.8%2c176.4 288%2c196 C 403.2%2c215.6 460.8%2c132.6 576%2c139 C 691.2%2c145.4 748.8%2c228.8 864%2c228 C 979.2%2c227.2 1036.8%2c152.2 1152%2c135 C 1267.2%2c117.8 1382.4%2c140.6 1440%2c142L1440 560L0 560z' fill='rgba(178%2c 255%2c 150%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c515 C 96%2c487.6 288%2c388.8 480%2c378 C 672%2c367.2 768%2c457.2 960%2c461 C 1152%2c464.8 1344%2c409.8 1440%2c397L1440 560L0 560z' fill='rgba(162%2c 255%2c 129%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1029'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    /* background: #A2FF81; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-footer footer {
-    max-width: 1200px;
+    width: 100vw;
+    height: 90%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-footer footer .logo-footer {
@@ -1020,95 +1086,80 @@ a .producto:hover img {
 .container-footer footer .redes-footer .icon-redes-footer {
     font-size: 20px;
     margin: 20px;
-    background: #efefef;
-    width: 50px;
-    height: 50px;
+    border: 2px solid #121212;
+    width: 60px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
-    color: #a2a2a2;
+    border-radius: 50%;
+    color: #121212;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.container-footer footer .redes-footer a {
+    text-decoration: none;
+    transition: all .5s ease;
 }
 
 footer .redes-footer .fa-facebook-f:hover {
     background: #41579A;
     color: #fff;
+    transition: all .5s ease;
+
 }
 
 footer .redes-footer .fa-tiktok:hover {
     background: #000000;
     color: #fff;
+    transition: all .5s ease;
+
 }
 
 footer .redes-footer .fa-instagram:hover {
     background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
     color: #fff;
-}
-
-
-.container-footer footer hr {
-    margin-top: 20px;
-    border: none;
-    height: 2px;
-    background: #faf7f7eb;
-}
-
-
-.container-footer h4 {
-    text-align: center;
-    margin-top: 80px;
-    color: #ffffff;
-    font-weight: 500;
+    transition: all .5s ease;
 }
 
 .columF {
-    display: grid;
-    grid-template-columns: repeat(3, 30fr);
-    text-align: center;
     width: 100%;
-}
-
-.columF p,
-i {
-    color: #fbfffd;
-}
-
-.Nuestros-productos {
-    height: 80%;
-    width: 80%;
-    padding: 20px 0 0px 1em;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0 20px 0;
 }
 
 .paginas {
-    height: 80%;
-    width: 80%;
-    padding: 20px 0 0px 1em;
-    align-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
-.contactos {
-    height: 80%;
-    width: 80%;
-    padding: 20px 0 0px 1em;
-    align-content: center;
+.paginas a {
+    font-family: 'Krona One', sans-serif;
+    font-size: 14px;
+    margin: 0 50px;
+    color: #121212;
+    transition: all .5s ease;
 }
 
-.contactos i {
-    height: 25%;
+.paginas a:hover {
+    color: #E49B30;
+    transition: all .5s ease;
 }
 
-.contactos i:hover {
-    color: #000;
-    cursor: pointer;
+.ctn-derechos {
+    position: absolute;
+    bottom: 0;
+    padding: 30px 0;
 }
 
-.Nuestros-productos i:hover {
-    color: #000;
-    cursor: pointer;
-}
-
-.paginas i:hover {
-    color: #000;
-    cursor: pointer;
+.ctn-derechos h4 {
+    font-family: 'Krona One', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
 }

@@ -736,6 +736,7 @@ a .producto:hover img {
     padding: 20px 80px;
     border-radius: 30px;
     transition: all .5s ease;
+    z-index: 9999;
 }
 
 .ctn-button span {
@@ -970,8 +971,10 @@ a .producto:hover img {
 }
 
 .espe-apartado a img {
-    width: 100vw;
+    width: 80vw;
     height: auto;
+    border-radius: 60px;
+    box-shadow: 0px 25px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .btn-espe {

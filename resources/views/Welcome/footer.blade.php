@@ -29,7 +29,7 @@
                 <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
             </div>
             <div class="ctn-derechos">
-                <h4>© 2022 Prowess Agronomia - Todos los Derechos Reservados</h4>
+                <h4>© 2022 Prowess Agronomía - Todos los Derechos Reservados</h4>
             </div>
         </footer>
 

@@ -1,5 +1,7 @@
-body {
+body,
+html {
     margin: 0;
+    padding: 0;
     /* background-image: url(multimedia/wallpapers/fondo.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -383,14 +385,15 @@ svg.rotating-slow {
     font-family: 'Krona One', sans-serif;
     color: rgba(18, 18, 18, 1);
     font-size: 55px;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
     letter-spacing: 5px;
     text-transform: capitalize;
+    line-height: 1.35;
     font-weight: 700;
 }
 
 .ctn-text-2 {
-    margin: 10px 0;
+    margin: 0 0 10px 0;
     z-index: 9;
 }
 
@@ -399,6 +402,12 @@ svg.rotating-slow {
     color: rgba(18, 18, 18, 1);
     font-size: 31px;
     text-align: center;
+}
+
+span.text-percent {
+    background-color: #1bc59b;
+    padding: 1px 10px;
+    border-radius: 30px;
 }
 
 @media screen and (orientation: portrait) {
@@ -973,6 +982,7 @@ a .producto:hover img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .ctn-wrapper-espe {
@@ -1085,28 +1095,26 @@ a .producto:hover img {
 /*Footer - pie de pagina*/
 
 .container-footer {
+    height: 80vh;
+    width: 100%;
     position: relative;
-    height: 100vh;
-    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1013%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c41 C 57.6%2c72 172.8%2c176.4 288%2c196 C 403.2%2c215.6 460.8%2c132.6 576%2c139 C 691.2%2c145.4 748.8%2c228.8 864%2c228 C 979.2%2c227.2 1036.8%2c152.2 1152%2c135 C 1267.2%2c117.8 1382.4%2c140.6 1440%2c142L1440 560L0 560z' fill='rgba(42%2c 213%2c 135%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c515 C 96%2c487.6 288%2c388.8 480%2c378 C 672%2c367.2 768%2c457.2 960%2c461 C 1152%2c464.8 1344%2c409.8 1440%2c397L1440 560L0 560z' fill='rgba(131%2c 223%2c 150%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1013'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
-    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1029%26quot%3b)' fill='none'%3e%3cpath d='M 0%2c41 C 57.6%2c72 172.8%2c176.4 288%2c196 C 403.2%2c215.6 460.8%2c132.6 576%2c139 C 691.2%2c145.4 748.8%2c228.8 864%2c228 C 979.2%2c227.2 1036.8%2c152.2 1152%2c135 C 1267.2%2c117.8 1382.4%2c140.6 1440%2c142L1440 560L0 560z' fill='rgba(178%2c 255%2c 150%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c515 C 96%2c487.6 288%2c388.8 480%2c378 C 672%2c367.2 768%2c457.2 960%2c461 C 1152%2c464.8 1344%2c409.8 1440%2c397L1440 560L0 560z' fill='rgba(162%2c 255%2c 129%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1029'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e"); */
-    /* background: #A2FF81; */
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(multimedia/img/layered-waves-haikei.svg);
 }
 
 .container-footer footer {
-    width: 100vw;
-    height: 90%;
-    margin: auto;
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 0 100px;
 }
 
 .container-footer footer .logo-footer {
@@ -1139,6 +1147,25 @@ a .producto:hover img {
     transition: all .5s ease;
 }
 
+.ctn-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-social span {
+    font-family: 'Krona One', sans-serif;
+    font-size: 24px;
+    color: #121212;
+}
+
 .container-footer footer .redes-footer a {
     text-decoration: none;
     transition: all .5s ease;
@@ -1167,7 +1194,7 @@ footer .redes-footer .fa-instagram:hover {
 .columF {
     width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 50px 0 20px 0;
@@ -1175,17 +1202,18 @@ footer .redes-footer .fa-instagram:hover {
 
 .paginas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .paginas a {
     font-family: 'Krona One', sans-serif;
     font-size: 14px;
-    margin: 0 50px;
+    margin: 10px 50px;
     color: #121212;
     transition: all .5s ease;
+    text-decoration: none;
 }
 
 .paginas a:hover {
@@ -1197,6 +1225,10 @@ footer .redes-footer .fa-instagram:hover {
     position: absolute;
     bottom: 0;
     padding: 30px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .ctn-derechos h4 {

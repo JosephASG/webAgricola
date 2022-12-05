@@ -6,7 +6,7 @@
                 </div> -->
                 <div class="ctn-land-hero">
                     <div class="ctn-text-1">
-                        <span>Productos agrícolas 100% naturales y frescos</span>
+                        <span>Productos agrícolas <span class="text-percent">100%</span> naturales y frescos</span>
                     </div>
                     <div class="ctn-text-2">
                         <span>De la mata a la olla 🍎</span>

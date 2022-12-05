@@ -7,26 +7,31 @@
             <div class="columF">
                 <div class="paginas">
                     <a href="">
-                        <i>Inicio</i>
+                        <span>Inicio</span>
                     </a>
                     <a href="">
-                        <i>Equipo</i>
+                        <span>Equipo</span>
                     </a>
                     <a href="">
-                        <i>Nosotros</i>
+                        <span>Nosotros</span>
                     </a>
                     <a href="">
-                        <i>Productos</i>
+                        <span>Productos</span>
                     </a>
                     <a href="">
-                        <i>Terminos y condiciones</i>
+                        <span>Terminos y condiciones</span>
                     </a>
                 </div>
             </div>
-            <div class="redes-footer">
-                <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-tiktok icon-redes-footer"></i></a>
-                <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+            <div class="ctn-social-media">
+                <div class="title-social">
+                    <span>Síguenos en nuestras redes sociales</span>
+                </div>
+                <div class="redes-footer">
+                    <a href="#"><i class="fab fa-facebook-f icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-tiktok icon-redes-footer"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-redes-footer"></i></a>
+                </div>
             </div>
             <div class="ctn-derechos">
                 <h4>© 2022 Prowess Agronomía - Todos los Derechos Reservados</h4>

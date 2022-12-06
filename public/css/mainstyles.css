@@ -1055,13 +1055,9 @@ a .producto:hover img {
 
 .espe-apartado-THEWUR {
     margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #2ad587;
-    padding: 30px 0;
-    box-shadow: 0px 25px 15px -3px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 200px;
 
 }
 
@@ -1070,32 +1066,39 @@ a .producto:hover img {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding: 80px 0;
+    border: 1px solid #121212;
+    transition: all .5s ease;
+}
 
+.espe-apartado-THEWUR a:hover img {
+    transform: scale(1.2);
+    transition: all .5s ease;
 }
 
 .espe-apartado-THEWUR a img.imgespe-rank {
-    width: 300px;
+    width: 200px;
     height: auto;
-    margin: 0 50px;
+    transition: all .5s ease;
 }
 
 .espe-apartado-THEWUR a img.imgespe-espe {
-    width: 300px;
-    height: auto;
-    margin: 0 50px;
+    width: auto;
+    height: 150px;
+    transition: all .5s ease;
 }
 
 .espe-apartado-THEWUR a img.imgespe-decea {
     width: auto;
-    height: 200px;
-    margin: 0 50px;
+    height: 150px;
+    transition: all .5s ease;
 }
 
 
 /*Footer - pie de pagina*/
 
 .container-footer {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     position: relative;
     background-repeat: no-repeat;

@@ -6,11 +6,11 @@
                 <ul class="menu">
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Marketplace</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="{{route('nosotros')}}">Nosotros</a></li>{{-- {{ route('nosotros') }} --}}
                     <li><a href="#">Ayuda</a></li>
-                    <li><a href="#">Contactonos</a></li>
+                    <li><a href="#">Contáctanos</a></li>
                     <li><a href="#">Mi Cuenta</a></li>
-                    <li><a href="#">Ingresar</a></li>{{-- {{ route('login') }} --}}
+                    <li><a href="{{ route('login') }}">Ingresar</a></li>{{-- {{ route('login') }} --}}
                     <li><a href="{{ route('register') }}">Registrarse</a></li>
                     <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                 </ul>

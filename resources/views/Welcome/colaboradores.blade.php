@@ -12,13 +12,13 @@
 <div class="ctn-espe-2">
     <div class="espe-apartado-THEWUR">
         <a href="https://www.topuniversities.com/universities/universidad-de-las-fuerzas-armadas-espe-ex-escuela-politecnica-del-ejercito"
-            target="_blank"><img src="{{ asset('multimedia/img/wur.png') }}" alt="" class="imgespe-rank">
+            target="_blank"><img src="{{ asset('multimedia/wallpapers/rank.png') }}" alt="" class="imgespe-rank">
         </a>
         <a href="https://www.espe.edu.ec"
-            target="_blank"><img src="{{ asset('multimedia/img/espe.png') }}" alt=""  class="imgespe-espe">
+            target="_blank"><img src="{{ asset('multimedia/wallpapers/espe.png') }}" alt=""  class="imgespe-espe">
         </a>
         <a href="https://deceac.espe.edu.ec"
-            target="_blank"><img src="{{ asset('multimedia/img/decea_1.png') }}" alt=""
+            target="_blank"><img src="{{ asset('multimedia/wallpapers/decea.png') }}" alt=""
                 class="imgespe-decea">
         </a>
     </div>

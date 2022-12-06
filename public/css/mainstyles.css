@@ -1067,7 +1067,6 @@ a .producto:hover img {
     justify-content: center;
     align-items: center;
     padding: 80px 0;
-    border: 1px solid #121212;
     transition: all .5s ease;
 }
 
@@ -1083,8 +1082,8 @@ a .producto:hover img {
 }
 
 .espe-apartado-THEWUR a img.imgespe-espe {
-    width: auto;
-    height: 150px;
+    width: 300px;
+    height: auto;
     transition: all .5s ease;
 }
 

@@ -1,3 +1,6 @@
+@extends('Welcome.layoutNosotros.layoutNosotros')
+@section('content')
 <div>
-    hola mundo
+
 </div>
+@endsection

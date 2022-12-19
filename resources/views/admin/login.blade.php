@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
     <meta charset="utf-8">
     <link rel="shortcut icon" href="{{ url('multimedia/wallpapers/cropped-cropped-PROWESS-AGRONOMIA@4x-1-1.png') }}" />
@@ -15,6 +16,7 @@
         <img src="{{ asset('multimedia/wallpapers/logoPW.png') }}" class="avatar" alt="Avatar Image">
         <img src="{{ asset('multimedia/wallpapers/PW.png') }}" class="avatar2" alt="">
         <h1>Inicio de sesión Administrador</h1>
+
         <form method="POST" action="{{ url('admin/login') }}">
             @csrf
             <!-- USERNAME INPUT -->

@@ -164,3 +164,28 @@ body {
     background: #0fb845ca;
     color: rgb(252, 252, 252);
 }
+
+.btn {
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 10px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 13px;
+    background: #077107a6;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #0fb845ca;
+    text-decoration: none;
+  }
+  .btn:span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }

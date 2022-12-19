@@ -6,7 +6,9 @@
     <link rel="shortcut icon" href="{{ url('multimedia/wallpapers/cropped-cropped-PROWESS-AGRONOMIA@4x-1-1.png') }}" />
     <title>Inicio de sesión</title>
     <link rel="stylesheet" href="{{ url('css/login.css') }}">
+    <input type="button"  class="btn" value="← Volver a Página Principal" onClick="history.go(-1);">
 </head>
+
 
 <body>
 
